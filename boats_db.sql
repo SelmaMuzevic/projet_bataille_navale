@@ -1,0 +1,1 @@
+CREATE DATABASE boats_db;
