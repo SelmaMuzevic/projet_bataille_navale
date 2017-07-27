@@ -5,63 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Bataille Navale</title>
-
-    <style>
-        body {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            width: 100%;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        .vert {
-            background-color: blueviolet;
-        }
-        
-        .noir {
-            background-color: pink;
-        }
-        
-        .caseBataille {
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            background-color: white;
-        }
-        
-        .caseBataille2 {
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            background-color: white;
-        }
-        
-        #boats {
-            margin-top: 125px;
-            box-shadow: 10px 10px 5px black;
-        }
-        
-        #shots {
-            margin-top: 125px;
-            box-shadow: 10px 10px 5px black;
-        }
-    </style>
     <script>
         function changeClasse(td, couleur) {
-            td.className = couleur;
-        }
-    </script>
-
+        td.className = couleur;
+  }
+  </script>
+    
 </head>
-
 <body>
+    <!--La table contient des éléments tr qui représentent les lignes
+    l'élément tr contient des éléments td qui représentent les différentes cases de la ligne-->
     <h1>Player 1</h1>
-    <table id="boats" border="1">
+    <table id="player" border="1">
         <tr>
             <td></td>
             <td class="caseBataille">A</td>
@@ -216,7 +173,7 @@
     </table>
 
     <h1>Player 2</h1>
-    <table id="shots" border="2">
+    <table id="adversaire" border="2">
         <tr>
             <td></td>
             <td class="caseBataille2">A</td>
@@ -367,7 +324,7 @@
             <td class="caseBataille2" onclick="changeClasse(this, 'noir');" id="J10"></td>
         </tr>
     </table>
-
+<script src="grid.js"></script>
 </body>
 <!--<input type="button" id="jouer" value="Valider" />-->
 

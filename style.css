@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.vert {
+    background-color: blueviolet;
+}
+
+.noir {
+    background-color: pink;
+}
+
+.caseBataille {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.caseBataille2 {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+#player {
+    margin-top: 125px;
+    box-shadow: 10px 10px 5px black;
+}
+
+#adversaire {
+    margin-top: 125px;
+    box-shadow: 10px 10px 5px black;
+}
